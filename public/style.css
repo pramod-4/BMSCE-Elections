@@ -1,0 +1,217 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("images/homepagebg.png");
+    
+    background-repeat: no-repeat;
+    background-size: 100%;   
+}
+p
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.left
+{
+    display: flex;
+}
+.right
+{
+    display: flex;
+}
+.navbar {
+    background-color:#001F3F;
+    overflow: hidden;
+    color: white;
+    padding: 10px 10px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    z-index: 3;
+    color: gold;
+    position: fixed;
+    margin-bottom: 300px;
+}
+.navbar a {
+    
+    text-decoration: none;
+    margin-right: 5px; /* Adjust the margin between links as needed */
+    white-space: nowrap; /* Prevent line breaks within links */
+    color:gold;
+    padding: 10px;
+    font-size: 17px;
+    
+}
+.navbar a:hover{
+    background-color: beige;
+    border-radius: 50px;
+    transition: 750ms;
+    
+    color: #000;
+    filter: drop-shadow(2px 2px 2px gold);  
+}
+.animation{
+    display: inline-block;
+    font-family: "arial";
+    font-size: 24px;
+    color: black;
+    z-index: 2;
+    
+  }
+  
+
+.lc
+{
+    display: flex;
+    justify-content: space-between;
+    height: 530px;
+    
+}
+.loginbar
+{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-self: flex-end;
+    margin-right: 13%;
+    margin-top: 9%;
+    height: 350px;
+    width: 300px;   
+    text-align: center;
+    
+}
+
+button
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;   
+    width: 200px; 
+    height: 50px;
+    background-color:antiquewhite;
+}
+button:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 4px black);
+    transition: 300ms;
+  }
+
+input {
+    border: 1px solid #ccc; /* Set a default border color */
+    border-radius: 10px; /* Set border-radius */
+    padding: 5px; /* Adjust padding as needed */
+    height: 27px;
+    width: 200px;
+}
+
+/* Additional styling for better visual appearance */
+input:focus {
+    outline: none; /* Remove outline on focus for better aesthetics */
+    border: 2px solid black; /* Change border color on focus */
+    
+}
+input::placeholder
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:120%;
+    
+}
+.login
+{
+    
+    font-size: 16px;
+    border-radius: 10px;
+}
+.back
+{    
+    font-size: 15px;
+}
+
+.newreg
+{
+    
+    font-size: 15px;
+}
+.back:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.newreg:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer
+        {
+            
+            background-color:#001F3F; 
+            padding: 20px;
+            margin-top: 300px;
+            color: white;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 600px;
+            justify-content: space-between;
+        }
+.column
+{
+    padding: 10px;
+}
+
+.column p {
+    
+    margin-top: 10px; /* Add margin for spacing */
+}
+.animation
+{
+    margin-bottom: 0px;
+}
+
+.wrapper {
+    height: 10px;
+    margin-left: 40px;
+    /*This part is important for centering*/
+    
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 72ch;
+    animation: typing 2s , blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 20px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .image-container {
+    position: relative;
+}
+#vimg
+{
+    margin-left: 350px;
+}
+.animation-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+

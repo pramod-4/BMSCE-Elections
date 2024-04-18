@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Side</title>
+    <script>
+        const fname = '<%= locals.fname %>';
+        const candiId = '<%= locals.candiId %>';
+    </script>
+    <script src="cscript.js"></script>
+
+    <link rel="stylesheet" href="cstyle.css">
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left">
+            <img src="images/bmslogo.png" alt="error" srcset="" height="6.5%" width="6.5%"> &nbsp;
+            <p style="margin: 20px; font-size:xx-large"><b>BMSCE ELECTIONS</b></p>
+        </div>
+        <div class="right">
+            <a onclick="def()">Home</a> &nbsp; &nbsp;
+            <a href="aboutus.html">About Us</a>&nbsp; &nbsp;
+            <a href="contactus.html">Contact Us</a>&nbsp; &nbsp;
+            <a href="index.html">Sign Out</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="sep">
+        <div class="sidebar">
+            <p style="font-size: 20px; text-align:center; margin-left:40px"><b>Navigation Bar</b></p>
+            <div class="sep1" onclick="gen('p')">
+                <div><img src="images/candsym/President.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1">
+                    <p>President</p>
+                </div>
+            </div>
+            <div class="sep1" onclick="gen('vp')">
+                <div><img src="images/candsym/Vice-President.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1">
+                    <p>Vice-President</p>
+                </div>
+            </div>
+            <div class="sep1" onclick="gen('s')">
+                <div><img src="images/candsym/Secretary.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1">
+                    <p>Secretary</p>
+                </div>
+            </div>
+            <div class="sep1" onclick="gen('t')">
+                <div><img src="images/candsym/Treasurer.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1">
+                    <p>Treasurer</p>
+                </div>
+            </div>
+            <div class="sep1" onclick="gen('mh')">
+                <div><img src="images/candsym/Marketing Head.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1">
+                    <p>Marketing Head</p>
+                </div>
+            </div>
+        </div>
+        <div class="port">
+            <div class="main" id="main">
+
+
+                <div class="animation">
+                    <br>
+                    <div class="wrapper">
+                        <div class="typing-demo">
+                          <code style="font-size: 50px; ">Hello  <%= fname %>!!</code>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p><b>Welcome to the spotlight, where your journey to shaping BMSCE's future begins! 🚀</b></p>
+                <div class="leftalign">
+                    <p>This is your platform to shine, to showcase what makes you tick, what fires you up, and why you're the perfect fit to lead the charge.
+                        <br><br>
+                        So, buckle up and let's dive in! Share your story, flaunt those talents, and lay out your vision for our awesome institution.
+                        <br>
+                        This is your chance to make waves, to inspire change, and to leave your mark on BMSCE's legacy.
+                        <br><br>
+                        Ready to rock the vote? Hit that button below, upload your portfolio, and let's kickstart this electrifying journey together!</p>
+                
+                </div>
+                <br>
+                <div class="cen" onclick="uportf()"><p id="up"><b>Upload Portfolio</b></p></div>
+                
+
+
+
+            </div>
+        </div>
+    </div><br>
+    <div class="footer">
+        <div class="column">
+            <div class="left"><img src="images/bmslogo.png" alt="error" srcset="" height="15%" width="15%">&nbsp;&nbsp;
+                <p style="font-size: larger; margin-top:20px; color:gold;"><b>BMSCE ELECTIONS</b></p>
+            </div>
+            <p style="font-size: large;"><b>&COPY;</b> 2024 College Elections. <br>We own the stage, but you own your
+                vote. <br> All rights reserved. <br> This website is like a backstage pass – entertaining but not
+                legally binding.
+            </p>
+        </div>
+
+        <div class="column">
+            <p style="font-size: larger; color:gold;"><b>Stay Social,Stay Sane</b></p>
+            <div class="left"><img src="images/insta.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+                <p style="margin-top: 3.2px;">Instagram</p>
+            </div><br>
+            <div class="left"><img src="images/fb.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+                <p style="margin-top: 4px;">Facebook</p>
+            </div><br>
+            <div class="left"><img src="images/x.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+                <p style="margin-top: 3.2px;">Twitter</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

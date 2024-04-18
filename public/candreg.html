@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Registration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* background-image: url("images/BG.jpg"); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .left
+        {
+            display: flex;
+        }
+        .navbar {
+            background-color:#001F3F;
+            overflow: hidden;
+            color: white;
+            padding: 10px 10px;
+            display: flex;  
+            justify-content: space-between;
+            align-items: center;
+            white-space: nowrap;
+            z-index: 3;
+            color: gold;
+            position: fixed;
+            margin-bottom: 300px;
+        }
+        .navbar a {
+            
+            text-decoration: none;
+            margin-right: 5px; /* Adjust the margin between links as needed */
+            white-space: nowrap; /* Prevent line breaks within links */
+            color:gold;
+            padding: 10px;
+            font-size: 17px;
+            
+        }
+        .navbar a:hover{
+            background-color: beige;
+            border-radius: 50px;
+            transition: 750ms;
+            
+            color: #000;
+            filter: drop-shadow(2px 2px 2px gold);  
+        }
+        .footer
+        {
+            
+            background-color:#001F3F; 
+            padding: 20px;
+            margin-top: 100px;
+            color: white;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 600px;
+            justify-content: space-between;
+        }
+        .column
+        {
+            padding: 10px;
+        }
+        
+        .column p {
+            
+            margin-top: 10px; /* Add margin for spacing */
+        }
+        .reg
+        {
+            text-align: center;
+        }
+        .reg p{
+            padding: 20px;
+            text-align: left;
+            font-size: 20px;
+        }
+        .center p {
+            font-size: 19px;
+            padding: 25px;
+            margin-top: -30px;
+
+        }
+
+        .cform {
+            border: 2px solid black;
+            text-align: left;
+            
+            border-radius: 10px;
+            padding: 50px;
+            padding-top: 10px;
+            font-size: 21px;
+
+        }
+
+        .cform:focus-within {
+            border: 3px solid black;
+            box-shadow: 0 0 10px gold;
+        }
+
+        .cform label {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .radio
+        {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .sep {
+            display: flex;
+            gap: 90px;
+        }
+
+        .input {
+            border: 1px solid #ccc;
+            /* Set a default border color */
+            border-radius: 5px;
+            /* Set border-radius */
+            padding: 5px;
+            /* Adjust padding as needed */
+            width: 300px;
+            height: 20px;
+        }
+
+        /* Additional styling for better visual appearance */
+        .input:focus {
+            outline: none;
+            /* Remove outline on focus for better aesthetics */
+            border: 2px solid black;
+            /* Change border color on focus */
+
+        }
+
+        select {
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        select:focus {
+            border: 2px solid black;
+        }
+
+        textarea {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: lighter;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #001F3F;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        .grid4
+        {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin:30px;
+            
+            
+        }
+        .rleft p
+        {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <img src="images/bmslogo.png" alt="error" srcset="" height="6.5%" width="6.5%"> &nbsp;
+            <p style="margin: 20px; font-size:xx-large"><b>BMSCE ELECTIONS</b></p>
+        </div>
+        <div class="right">
+            <a href="index.html">Home</a> &nbsp; &nbsp;
+            <a href="aboutus.html">About Us</a>&nbsp; &nbsp;
+            <a href="contactus.html">Contact Us</a>
+            
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="reg">
+        <h1>Candidate Registration</h1>
+        <div class="grid4">
+           <div class="rleft">
+            <p>Welcome to the VIP backstage of BMSCE Elections! <br><br> Ready to join the league of extraordinary leaders? Buckle up your visionary cape and step into the spotlight by registering as a candidate. It's your chance to shine brighter than a disco ball at a dance party!
+                <br><br>
+                Fill out the form next to this, and voila! We'll send your exclusive Candidate ID straight to your email. <br>Consider it your golden ticket to the dazzling world of BMSCE Elections, where you're not just a candidate; you're a star in the making. <br><br>Get ready to own the stage and let your leadership journey begin!</p>
+           </div>
+           <div class="cform">
+            <form action="/api/v1/candidates" method="get">
+                <h3>Candidate Registration Form</h3>
+                <div class="sep">
+                    <div>
+                        <label for="cfname">First name:</label><br>
+                        <input type="text" name="cfname" id="cfname" class="input">
+                    </div>
+                    <div>
+                        <label for="clname">Last name:</label><br>
+                        <input type="text" name="clname" id="clname" class="input">
+                    </div>
+                    
+                </div>
+                
+                <div class="sep">
+                   <div>
+                        <label for="cusn">USN:</label><br>
+                        <input type="text" name="cusn" id="cusn" class="input">
+                   </div>
+                   <div>
+                    <label for="cmail">E-Mail:</label><br>
+                    <input type="email" name="cmail" id="cmail" class="input">
+               </div>
+                </div>
+                <div class="sep">
+                    <div>
+                        <label for="gen">Gender:</label>
+                        <br>
+                        <input type="radio" name="gender" id="male" style="font-size: 10px;"><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                   </div>
+                   <div>
+                    <label for="csub">Desired Role </label><br>
+                <select name="csub" id="csub">
+                    <option value="" selected disabled>--Select an Option--</option>
+                    <option value="p">President</option>
+                    <option value="vp">Vice-President</option>
+                    <option value="s">Secretary</option>
+                    <option value="t">Treasurer</option>
+                    <option value="mh">Marketing Head</option>
+                </select><br>
+                   </div>
+                </div>
+                <label for="cmess">Your motto:</label><br>
+                <textarea name="cmess" id="cmess" cols="104" rows="10"></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="column">
+            <div class="left"><img src="images/bmslogo.png" alt="error" srcset="" height="15%" width="15%">&nbsp;&nbsp;
+            <p style="font-size: larger; margin-top:20px; color: gold;"><b>BMSCE ELECTIONS</b></p></div>
+            <p style="font-size: large;"><b>&COPY;</b> 2024 College Elections. <br>We own the stage, but you own your
+                vote. <br> All rights reserved. <br> This website is like a backstage pass – entertaining but not
+                legally binding.
+            </p>
+        </div>
+       
+        <div class="column">
+            <p style="font-size: larger; color: gold;"><b>Stay Social,Stay Sane</b></p>
+            <div class="left"><img src="images/insta.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 3.2px;">Instagram</p></div><br>
+            <div class="left"><img src="images/fb.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 4px;">Facebook</p></div><br>
+            <div class="left"><img src="images/x.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 3.2px;">Twitter</p></div>
+        </div>
+    </div>
+</body>
+</html>

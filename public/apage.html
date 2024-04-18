@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+  
+    <script src="vscript.js"></script>
+    
+    <link rel="stylesheet" href="vstyles.css">
+    
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <img src="images/bmslogo.png" alt="error" srcset="" height="6.5%" width="6.5%"> &nbsp;
+            <p style="margin: 20px; font-size:xx-large"><b>BMSCE ELECTIONS</b></p>  
+        </div>
+        <div class="right">
+            <a onclick="admin()">Home</a> &nbsp; &nbsp;
+            <a href="index.html">Sign Out</a>  
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="sep">
+        <div class="sidebar">
+            <p style="font-size: 20px; text-align:center; margin-left:40px"><b>Navigation Bar</b></p>
+            <div class="sep1" onclick="gen('p')">
+                <div><img src="images/candsym/President.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1"><p>President</p></div>
+            </div>
+            <div class="sep1" onclick="gen('vp')">
+                <div><img src="images/candsym/Vice-President.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1"><p>Vice-President</p></div>
+            </div>
+            <div class="sep1" onclick="gen('s')">
+                <div><img src="images/candsym/Secretary.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1"><p>Secretary</p></div>
+            </div>
+            <div class="sep1" onclick="gen('t')">
+                <div><img src="images/candsym/Treasurer.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1"><p>Treasurer</p></div>
+            </div>
+            <div class="sep1" onclick="gen('mh')">
+                <div><img src="images/candsym/Marketing Head.png" alt="" srcset="" height="8%" width="8%"></div>
+                <div class="right1"><p>Marketing Head</p></div>
+            </div>
+        </div>
+        <div class="port">
+            <div class="main" id="main">
+            
+                
+                <h1 class="cen">Admin Panel</h2>
+                    <br><br>
+                
+                    <div class="cen">
+                        <button type="submit" id="vs" onclick="displayresults()">Results </button>
+    
+                    </div><br><br>
+                
+                <form action="/reset" method="post" class="voteform">
+                    <div class="cen">
+                        <button type="submit" id="vs">Reset </button>
+                    </div>
+                </form>
+                <br><br>
+                <div id="results">
+
+                </div>
+                
+                
+                 
+            </div>
+        </div>
+    </div><br>
+    <div class="footer">
+        <div class="column">
+            <div class="left"><img src="images/bmslogo.png" alt="error" srcset="" height="15%" width="15%">&nbsp;&nbsp;
+            <p style="font-size: larger; margin-top:20px; color:gold;"><b>BMSCE ELECTIONS</b></p></div>
+            <p style="font-size: large;"><b>&COPY;</b> 2024 College Elections. <br>We own the stage, but you own your
+                vote. <br> All rights reserved. <br> This website is like a backstage pass – entertaining but not
+                legally binding.
+            </p>
+        </div>
+    
+        <div class="column">
+            <p style="font-size: larger; color:gold;"><b>Stay Social,Stay Sane</b></p>
+            <div class="left"><img src="images/insta.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 3.2px;">Instagram</p></div><br>
+            <div class="left"><img src="images/fb.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 4px;">Facebook</p></div><br>
+            <div class="left"><img src="images/x.png" alt="" srcset="" height="7%" width="7%">&nbsp;&nbsp;
+            <p style="margin-top: 3.2px;">Twitter</p></div>
+        </div>
+    </div>
+</body>
+</html>
